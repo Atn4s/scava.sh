@@ -9,5 +9,3 @@ Por fim o arquivo config gerado será movido para <i> .config/cava/config </i> e
 Baixe o arquivo shcava.sh e execute através de <i> bash shcava.sh </i> <br>
 Se preferir você pode adicionar um alias como <i> bash {local_do_script}/shcava.sh </i> para facilitar e concatenar com o pywal como no exemplo:
 <i> wal -i wallpaper_example && scava
-
-<b> Observação: aperte r no cava para aplicar o tema! </b>
