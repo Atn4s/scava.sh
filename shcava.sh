@@ -39,4 +39,5 @@ fi
 
 # move as configurações atuais para a pasta Cava
 mv config $HOME/.config/cava/
+killall -SIGUSR1 cava
 
