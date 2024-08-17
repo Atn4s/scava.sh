@@ -30,8 +30,6 @@ if [ -e "$input_file" ]; then
     echo "gradient_color_$((i+1)) = '$color'" >> "$output_file"
   done
 
-  echo "Conversão concluída. O resultado foi salvo em '$output_file'."
-  echo "O arquivo cores foi apagado!"
   rm "$input_file"
 else
   echo "Arquivo de entrada '$input_file' não encontrado."
@@ -39,5 +37,8 @@ fi
 
 # move as configurações atuais para a pasta Cava
 mv config $HOME/.config/cava/
-killall -SIGUSR1 cava
 
+if pgrep -x "cava" > /dev/null
+then
+    killall -SIGUSR1 cava
+fi 
